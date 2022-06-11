@@ -1,0 +1,32 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>jp.co.nintendo</groupId>
+    <artifactId>sample-25</artifactId>
+    <version>RELEASE</version>
+    <properties>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
+    </properties>
+    <build>
+        <sourceDirectory>java/code</sourceDirectory>
+        <testSourceDirectory>java/test</testSourceDirectory>
+        <resources>
+            <resource>
+                <directory>java/data</directory>
+            </resource>
+        </resources>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+    </dependencies>
+</project>
